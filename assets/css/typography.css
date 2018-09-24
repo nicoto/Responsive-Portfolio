@@ -1,0 +1,48 @@
+@font-face {
+	font-family: Eczar;
+	src: url('../fonts/Eczar-Medium.ttf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face  {
+	font-family: Gentium;
+	src: url('../fonts/GenBasR.ttf') format('opentype');
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #4aaaa5;
+}
+h1, h3 {
+	padding: 5px 5px 0 5px;
+	font-family: Eczar, Georgia, Times, 'Times New Roman', sans-serif;
+	font-stretch: extra-expanded;
+	word-spacing: .2em;
+	font-size: 32px;
+}
+h2 {
+	margin-left: 10px;
+	font-family: Eczar, Georgia, Times, 'Times New Roman', sans-serif;
+	font-stretch: extra-expanded;
+	word-spacing: 1em;
+	font-size: 24px;	
+}
+h3 {
+	font-family: Eczar, Georgia, Times, 'Times New Roman', sans-serif;
+	font-size: 1.4em;
+	letter-spacing: .4em;
+	padding: 1px;
+}
+figcaption {
+	font-family: Eczar, Georgia, Times, 'Times New Roman', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	padding: 1px;
+}
+p, body {
+	font-family: Gentium, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+footer {
+	font-family: Eczar, Georgia, Times, 'Times New Roman', sans-serif;
+	font-size: .9em;
+	letter-spacing: .1em;
+}

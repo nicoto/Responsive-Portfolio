@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/node; charset=utf-8" />
+    <!-- SEO basics: https://www.link-assistant.com/news/html-meta-tags-for-seo.html -->
+    <meta name="description" content="HTML boilerplate">
+    <!-- A rich object in social networks -->
+    <meta name="og:title" property="og:title" content="Basic Portfolio - Nicholas Toulouse">
+    <!-- A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt's. But it is generally used to prevent search engines from indexing individual pages, while robots.txt prevents them from indexing a whole site or any its part. -->
+    <meta name="robots" content="index, follow">
+    <!-- When you have a few pages with identical content, you can use a canonical tag to tell search engines which page should be prioritized.-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="URL" rel="canonical">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/typography.css">
+    <!--         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Basic Portfolio - Nicholas Toulouse</title>
+</head>
+
+<body>
+    <header>
+        <div class="hgroup">
+            <h1>Nicholas Toulouse</h1>
+            <h3>San&nbsp;Francisco</h2>
+            </div>
+        </header>
+        <div class="container">
+
+            <section id="intro">
+
+                <nav id="mainNav" role="navigation">
+                    <div class="navbar">
+<!--                         <h1 class="brand">Welcome<span> & Bienvenue</span></h1> -->
+                        <ul class="nav">  
+                            <li style="display:none;">Tech</li> 
+                            <li style="display:none;">Journal</li>   
+                            <li style="display:none;">Games</li>
+                            <li style="display:none;">Algorithms</li>
+                            <li class="page icon home"><a href="./index.html"><span>Intro</span></a></li>
+                            <li class="page icon work"><a href="./portfolio.html"><span>Work</span></a></li> 
+                            <li style="display:none;" class="page icon blog"><a href="blog.html"><span>Blog</span></a></li> 
+                            <li class="page icon contact"><a href="contact.html"><span>Contact</span></a></li> 
+                        </ul> 
+                    </div> <!-- navbar -->
+                </nav> <!-- nav -->
+            </section>
+        <main class="contentContainer">
+            <h2>Contact</h2>
+            <hr/>
+            <br />
+            <form>
+                <label for="name" style="padding-left:10px">Name</label> <br>
+                <input type="text" id="name" size="15"placeholder="John Smith">
+                <br><br>
+                <label for="email" style="padding-left:10px">Email</label> <br>
+                <input type="text" size="15" id="email" placeholder="example@gmail.com">
+                <br><br>
+                <label for="message" style="padding-left:10px">Message</label> <br>
+                <textarea type="text" size="15" id="message" placeholder="Type your message here"></textarea><br>
+                <input type="submit" id="submit" value="Submit">            
+            </form>
+        </main> 
+
+        <aside class="announcements"><p>placeholder</p></aside>
+        </div> <!-- container -->
+        <br/>
+        <footer>
+            <div class="footer">
+                <em>Copyright - All rights reserved</em>&nbsp;&nbsp;<i>(Last updated September, 2018)</i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+            </div>
+        </footer>
+    </body>
+
+</html>

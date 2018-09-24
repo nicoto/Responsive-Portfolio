@@ -2,47 +2,81 @@
 
 <html>
     <head>
-        <rel="stylesheet" type="text/css" href="css/main.css" />
+        <rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/node; charset=utf-8" />
         <!-- SEO basics: https://www.link-assistant.com/news/html-meta-tags-for-seo.html -->
         <meta name="description" content="HTML boilerplate">
         <!-- A rich object in social networks -->
-        <meta name="og:title" property="og:title" content="Your Awesome Open Graph Title">
+        <meta name="og:title" property="og:title" content="Basic Portfolio - Nicholas Toulouse">
         <!-- A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt's. But it is generally used to prevent search engines from indexing individual pages, while robots.txt prevents them from indexing a whole site or any its part. -->
         <meta name="robots" content="index, follow">
         <!-- When you have a few pages with identical content, you can use a canonical tag to tell search engines which page should be prioritized.-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link href="URL" rel="canonical">
-        
-        <title>HTML boilerplate</title>
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/typography.css">
+<!--         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ -->        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Basic Portfolio - Nicholas Toulouse</title>
     </head>
 
     <body>
-        <div class="Container">
-            <div class="Header">
-
+        <header>
+            <div class="hgroup">
+                <h1>Nicholas Toulouse</h1>
+                <h3>San&nbsp;Francisco</h2>
             </div>
+        </header>
+        <div class="container">
 
-            <div class="Menu">
-                <ul id="nav"> 
-                    <li>menu item</li>  
-                    <li>menu item</li> 
-                    <li>menu item</li>  
-                    <li>menu item</li> 
-                    <li>menu item</li>  
-                    <li>menu item</li> 
-                </ul> 
+            <section id="intro">
+
+                <img src="./assets/images/cableCar.jpg" alt="hero image">
+                <nav id="mainNav" role="navigation">
+                    <div class="navbar">
+                        <h1 class="brand">Welcome<span>&nbsp;&&nbsp;Bienvenue</span></h1>
+                        <ul class="nav">  
+                            <li style="display:none;">Tech</li> 
+                            <li style="display:none;">Journal</li>   
+                            <li style="display:none;">Games</li>
+                            <li style="display:none;">Algorithms</li>
+                            <li class="page icon home"><a href="./index.html"><span>Intro</span></a></li>
+                            <li class="page icon work"><a href="./portfolio.html"><span>Work</span></a></li> 
+                            <li style="display:none;" class="page icon blog"><a href="blog.html"><span>Blog</span></a></li> 
+                            <li class="page icon contact"><a href="contact.html"><span>Contact</span></a></li> 
+                        </ul> 
+                    </div> <!-- navbar -->
+                </nav> <!-- nav -->
+            </section>
+            <!-- http://www.nicholastoulouse.com/?page_id=28 
+            <aside class="sidedrawer"><p>placeholder</p></aside>-->
+            <main>
+                <p>Front-end developer - ENTP, bootcamp graduate current in full stack JavaScript, HTML/CSS, Node.js, React, database best practices, hosting providers. Now seeking to leverage sales & marketing experience in IT management for Fortune 100 in a mid-size department or company. Also skilled in UX matters, I can help the business with strategic thinking, organize brainstorming sessions, work closely with designers, and oversee vendors. </p>
+
+                <p>Trained and re-certified in the latest tools and technologies in front-end design, full stack Javascript, and UX methodologies, I am technically proficient in the latest web technologies, graphic/interface design, and design thinking currently seeking an opportunity to apply this know-how in the professional environment of a small or medium size private company or in the public sector.</p>
+
+                <p>I am considered a creative, hard working, disciplined, and a people oriented individual.  Formally trained in graphic and digital arts at the Cooper Union school in NYC, the Beaux Arts in Paris, and The University of the Arts in Philadelphia, I strive to excel and improve my work each and every day. My background also includes extensive travel experiences with first-hand exposure to diverse cultures; this can be helpful in collaboration with diverse people or in devising new design models.</p>
+
+                <p>As a positive value add-on, I am acquainted with some aspects of business management having served sales and marketing management for a large corporation and taken business classes at Lehigh.</p>
+
+                <p>At SCRUM meetings, a standard question is what is your superpower? Even though I don't believe that superheroes exist, I think software creates a system that allows many minds working together in tandem to succeed together. System design is thus more than the usability of the user-interface or the efficiently of the software. Once upon a time a technology manager at Pfizer Inc desiging a new SFA system. During the discovery phase, I was able to sift through heaps of information gathered first-hand in the USA across the field and I helped consolidate a marketing distribution system in a large multiplex organization with many disparate working sales practices. Thus, I learned to serve the organization as a connector and a motivator between many cross-functional departments, to champion ideas, mandate and enforce priorities that improve software quality, and most importantly communicate requirements to executives and technical teams. These traits improve implementation of desired outcomes — I am therefore, results-oriented; all of which have contributed to Pfizer's excellent drug sales.</p>
+            </main>
+
+            <aside class="announcements"><p>placeholder</p></aside>
+        </div> <!-- container -->
+
+        <footer>
+            <div class="footer">
+                <em>Copyright - All rights reserved</em>&nbsp;&nbsp;<i>(Last updated September, 2018)</i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github-square" aria-hidden="true"></i>
             </div>
-
-            <div class="Body">
-
-            </div>
-        </div>
-
+        </footer>
     </body>
 
-    <footer>
-        <div class="Footer">
-            <b>Copyright - 2010</b>
-        </div>
-    </footer>
 </html>
