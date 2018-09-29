@@ -19,7 +19,7 @@ nav {
 	height: 40px;
 }
 main {
-	min-width: 960px;
+	width: 980px;
 	width: 100%;
 	margin-bottom: 30px;
 	padding-top: 20px;
@@ -104,3 +104,90 @@ footer {
 .contentContainer #submit:hover {
     color: black;
 }
+
+/* ===================================== */
+@media screen and (max-width: 980px) {
+	.hgroup, .container, main, .navbar, .footer {
+		width: 979px;
+	}
+	ul.nav {
+		margin-right: 150px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hgroup, .container, main, .navbar, .footer {
+		width: 767px;
+	}
+	ul.nav {
+		margin-right: 90px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.hgroup, .container, main, .navbar, .footer {
+		width: 639px;
+	}
+	.hgroup {
+		padding: 0 20px 0 30px;
+	}
+	main {
+		width: 599px;
+		margin: 0 20px 0 20px;
+	}
+	.brand > span {
+		display: none;
+	}
+	.brand {
+		padding: 5px 15px 1px 15px;
+		width: 160px;
+	}
+	ul.nav {
+		margin-right: 20px;
+	}
+	.container {
+		padding-bottom: 30px;
+	}
+
+/* panes for portfolio projects */
+	.row {
+		display: grid;
+		grid-template-areas: "a";
+		grid-gap: 15px;
+		grid-auto-columns: 400px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.row > .col {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	figure {
+		position: relative;
+		z-index: 1;
+	}
+	figure > img {
+		width: 520px;
+		border-bottom: 1px solid grey;
+	}
+	figcaption {
+		position: absolute;
+		z-index: 2;
+		bottom: 15px;
+		right: 0;
+		background-color: #4aaaa5;
+		height: 55px;
+		line-height: 55px;
+		width: 520px;
+		text-align: center;
+		vertical-align: middle;
+		color: white;
+		padding: 20px;
+	}
+	.col {
+		height: 400px;
+		width: 520px;
+		overflow: hidden;
+	}
+}
+

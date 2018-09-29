@@ -54,6 +54,7 @@ p {
 	margin-bottom: 1em;
 }
 img {
+	max-width: 100%;
 	display: block;
 }
 .clearfix::after {
@@ -63,7 +64,7 @@ img {
 }
 .hgroup {
 	margin: 0 auto;
-	width: 960px;
+	width: 980px;
 	padding: 6px;
 	background-color: white;
 }
@@ -72,19 +73,18 @@ img {
 }
 .container {
 	
-	width: 960px;
+	width: 980px;
 	margin: 0 auto;
 }
 .footer {
 	color: white;
 	margin: 0 auto;
 	padding: 5px 5px 10px 5px;
-	width: 960px;	
+	width: 980px;	
 }
 /* nav bar */
 .navbar {
-	min-width: 960px;
-	width: 100%;
+	width: 980px;
 	height: 40px;
 	display: inline-block;
 	font-size: 0;
