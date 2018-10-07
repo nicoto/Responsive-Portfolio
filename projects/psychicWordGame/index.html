@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic Game</title>
+</head>
+<body>
+    <h1>The Psychic Game</h1>
+    <h4>Guess what letter I'm thinking of?</h4>
+    <br />
+    Wins: <div id="wins"></div>
+    Losses: <div id="losses"></div>
+    Guesses Left: <div id="guessesleft"></div>
+    Your Guesses so far: <div id="guessessofar"></div>
+</body>
+<script>
+
+    var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    var wins = 0, losses = 0, guessesLeft, secretletter;
+
+    function initialize() {
+
+        document.getElementById('guessessofar').innerText = "";
+        document.getElementById('wins').innerText = wins;
+        document.getElementById('losses').innerText = losses;
+
+        guessesLeft = 9;
+        document.getElementById('guessesleft').innerText = guessesLeft;
+
+        var i = Math.floor( Math.random() * letters.length );
+        secretletter = letters[i];
+        console.log("New secret letter ", secretletter);
+    }
+
+    initialize();
+
+    document.addEventListener("keyup", function (event) {
+        var keychar =  String.fromCharCode(event.keyCode).toLowerCase();
+        var guessesSoFar = [];
+        guessesSoFar.push(keychar);
+        guessesLeft -= 1;
+        document.getElementById('guessesleft').innerText = guessesLeft;
+        document.getElementById('losses').insertAdjacentHTML = losses;
+        document.getElementById('guessessofar').innerHTML += (keychar + "," + "&nbsp;&nbsp;");
+
+        if (keychar === secretletter && guessesLeft > 0) {
+            wins += 1;
+            document.getElementById('wins').innerText = wins;
+            initialize();
+        } else if (guessesLeft === 0){
+            losses += 1;
+            document.getElementById('losses').innerText = losses;
+            initialize();
+        }
+    });
+</script>
+
+</html>
